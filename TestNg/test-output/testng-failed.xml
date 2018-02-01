@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [All Test Suite]">
+  <test verbose="2" name="E:/TestNg">
+    <classes>
+      <class name="TestNg.BppTest">
+        <methods>
+          <include name="one"/>
+        </methods>
+      </class> <!-- TestNg.BppTest -->
+    </classes>
+  </test> <!-- E:/TestNg -->
+</suite> <!-- Failed suite [All Test Suite] -->
