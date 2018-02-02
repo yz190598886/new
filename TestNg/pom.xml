@@ -14,62 +14,57 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <configuration>
-          <encoding>UTF-8</encoding>
-        </configuration>
-      </plugin>
-
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-surefire-plugin</artifactId>
-        <version>2.12.4</version>
-        <configuration>
-          <suiteXmlFiles>
-            <include>${testxml}</include>
-          </suiteXmlFiles>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
+  <!-- maven 引用依赖不同的jar -->
   <dependencies>
     <dependency>
       <groupId>org.testng</groupId>
       <artifactId>testng</artifactId>
-      <version>6.9.10</version>
+      <version>6.9.9</version>
       <scope>test</scope>
     </dependency>
-    <!--<dependency>-->
-      <!--<groupId>org.apache.maven.plugins</groupId>-->
-      <!--<artifactId>maven-surefire-plugin</artifactId>-->
-      <!--<version>2.19.1</version>-->
-    <!--</dependency>-->
-    <!--&lt;!&ndash; https://mvnrepository.com/artifact/org.apache.velocity/velocity &ndash;&gt;-->
-    <!--<dependency>-->
-      <!--<groupId>org.apache.velocity</groupId>-->
-      <!--<artifactId>velocity</artifactId>-->
-      <!--<version>1.7</version>-->
-    <!--</dependency>-->
-    <!--&lt;!&ndash; https://mvnrepository.com/artifact/com.google.inject/guice &ndash;&gt;-->
-    <!--<dependency>-->
-      <!--<groupId>com.google.inject</groupId>-->
-      <!--<artifactId>guice</artifactId>-->
-      <!--<version>3.0</version>-->
-    <!--</dependency>-->
-    <!--&lt;!&ndash; https://mvnrepository.com/artifact/org.uncommons/reportng &ndash;&gt;-->
-    <!--<dependency>-->
-      <!--<groupId>org.uncommons</groupId>-->
-      <!--<artifactId>reportng</artifactId>-->
-      <!--<version>1.1.4</version>-->
-      <!--<scope>test</scope>-->
-    <!--</dependency>-->
+    <dependency>
+      <groupId>org.uncommons</groupId>
+      <artifactId>reportng</artifactId>
+      <version>1.1.4</version>
+      <scope>test</scope>
+      <exclusions>
+        <exclusion>
+          <groupId>org.testng</groupId>
+          <artifactId>testng</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
 
-
-
-
+    <dependency>
+      <groupId>com.google.inject</groupId>
+      <artifactId>guice</artifactId>
+      <version>3.0</version>
+      <scope>test</scope>
+    </dependency>
   </dependencies>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>2.19</version>
+        <configuration>
+          <suiteXmlFiles>
+            <file>xml/${testxml}</file>
+          </suiteXmlFiles>
+          <properties>
+            <property>
+              <name>usedefaultlisteners</name>
+              <value>false</value>
+            </property>
+            <property>
+              <name>listener</name>
+              <value>org.uncommons.reportng.HTMLReporter, org.uncommons.reportng.JUnitXMLReporter</value>
+            </property>
+          </properties>
+          <!-- <workingDirectory>target/</workingDirectory> -->
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
 </project>
