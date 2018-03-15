@@ -2,17 +2,8 @@ package seleniumtest;
 
 public class Parm {
     String Addr;
-    String Pram;
-
-    public String getExpectation() {
-        return Expectation;
-    }
-
-    public void setExpectation(String expectation) {
-        Expectation = expectation;
-    }
-
-    String Expectation;
+    String PramOne;
+    String PramTwo;
 
     public String getAddr() {
         return Addr;
@@ -22,11 +13,22 @@ public class Parm {
         Addr = addr;
     }
 
-    public String getPram() {
-        return Pram;
+    public String getPramOne() {
+        return PramOne;
     }
 
-    public void setPram(String pram) {
-        Pram = pram;
+    public void setPramOne(String pramOne) {
+        PramOne = pramOne;
     }
+
+    public String getPramTwo() {
+        return PramTwo;
+    }
+
+    public void setPramTwo(String pramTwo) {
+        PramTwo = pramTwo;
+    }
+
+
+
 }

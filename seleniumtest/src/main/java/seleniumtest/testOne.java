@@ -22,8 +22,8 @@ public class testOne {
                 Parm parm = new Parm();
                 String[] a = text.split(",");
                 parm.setAddr(a[0]);
-                parm.setPram(a[1]);
-                parm.setExpectation(a[2]);
+                parm.setPramOne(a[1]);
+                parm.setPramTwo(a[2]);
                 list.add(parm);
             }
 
@@ -37,13 +37,13 @@ public class testOne {
         file();
         for (Parm a : list) {
             // TODO
-            diaoyong(a.getAddr(), a.getPram(),a.getExpectation());
+            diaoyong(a.getAddr(), a.getPramOne(),a.getPramTwo());
         }
 
     }
 
-        private static void diaoyong(String addr, String pram,String Expectation) {
-            System.out.println(addr+pram+Expectation);
+        private static void diaoyong(String addr, String PramOne,String PramTwo) {
+            System.out.println(addr+"--"+PramOne+"--"+PramTwo);
         }
     }
 
