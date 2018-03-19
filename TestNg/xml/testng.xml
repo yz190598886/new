@@ -3,7 +3,7 @@
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="E:/TestNg">
         <classes><class name="TestNg.AppTest">
-            <methods><include name="one"/></methods>
+            <!--<methods><include name="one"/></methods>-->
         </class>
         </classes>
     </test>
