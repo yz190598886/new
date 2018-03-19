@@ -7,4 +7,8 @@
         </class>
         </classes>
     </test>
+    <listeners>
+        <!-- class-name的值填写为时间创建的监听器的路径 -->
+        <listener class-name="TestNg.ExtentTestNGIReporterListener"></listener>
+    </listeners>
 </suite>
