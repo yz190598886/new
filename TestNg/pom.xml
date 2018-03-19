@@ -68,7 +68,7 @@
         <version>2.19</version>
         <configuration>
           <suiteXmlFiles>
-            <file>xml/${testxml}</file>
+            <file>xml/testng.xml</file>
           </suiteXmlFiles>
           <properties>
             <property>
