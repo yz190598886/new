@@ -1,6 +1,7 @@
 package TestNg;
 
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class AppTest
@@ -22,8 +23,11 @@ public class AppTest
     }
     @Test
     public void one3(){
-
+        String a="122356";
+        String b="1111111111";
         System.out.println("1111111111");
+        Assert.assertEquals(a,b);
+
     }
     @Test
     public void one4(){
