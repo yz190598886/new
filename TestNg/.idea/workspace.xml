@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4ed5bd92-e925-44f0-8f14-bc00632d6e41" name="Default" comment="3.20">
+    <list default="true" id="4ed5bd92-e925-44f0-8f14-bc00632d6e41" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/java/TestNg/ExtentTestNGIReporterListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TestNg/ExtentTestNGIReporterListener.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -34,8 +34,8 @@
       <file leaf-file-name="ExtentTestNGIReporterListener.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/TestNg/ExtentTestNGIReporterListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="114" column="62" selection-start-line="114" selection-start-column="62" selection-end-line="114" selection-end-column="62" />
+            <state relative-caret-position="554">
+              <caret line="190" column="51" lean-forward="true" selection-start-line="190" selection-start-column="51" selection-end-line="190" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -164,7 +164,7 @@
     <option name="jreName" value="1.8" />
     <option name="vmOptions" value="-DarchetypeCatalog=internal" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -453,7 +453,7 @@
       <workItem from="1521517224554" duration="357000" />
       <workItem from="1521517639863" duration="57000" />
       <workItem from="1521517704904" duration="831000" />
-      <workItem from="1521528612378" duration="2019000" />
+      <workItem from="1521528612378" duration="2228000" />
     </task>
     <task id="LOCAL-00001" summary="3.20">
       <created>1521526059340</created>
@@ -476,7 +476,14 @@
       <option name="project" value="LOCAL" />
       <updated>1521530041103</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="3.20">
+      <created>1521530642153</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1521530642153</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -512,7 +519,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29023000" />
+    <option name="totallyTimeSpent" value="29232000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
@@ -885,8 +892,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/TestNg/ExtentTestNGIReporterListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="114" column="62" selection-start-line="114" selection-start-column="62" selection-end-line="114" selection-end-column="62" />
+        <state relative-caret-position="554">
+          <caret line="190" column="51" lean-forward="true" selection-start-line="190" selection-start-column="51" selection-end-line="190" selection-end-column="51" />
         </state>
       </provider>
     </entry>
