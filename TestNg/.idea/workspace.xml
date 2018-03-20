@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4ed5bd92-e925-44f0-8f14-bc00632d6e41" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestNg/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestNg/AppTest.java" afterDir="false" />
+    <list default="true" id="4ed5bd92-e925-44f0-8f14-bc00632d6e41" name="Default" comment="3.20">
+      <change beforePath="$PROJECT_DIR$/src/main/java/TestNg/ExtentTestNGIReporterListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TestNg/ExtentTestNGIReporterListener.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -31,11 +31,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ExtentTestNGIReporterListener.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ExtentTestNGIReporterListener.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/TestNg/ExtentTestNGIReporterListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="31" column="9" lean-forward="true" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
+            <state relative-caret-position="450">
+              <caret line="114" column="62" selection-start-line="114" selection-start-column="62" selection-end-line="114" selection-end-column="62" />
             </state>
           </provider>
         </entry>
@@ -49,11 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AppTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AppTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestNg/AppTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="725">
-              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="475">
+              <caret line="19" column="23" lean-forward="true" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -130,8 +130,8 @@
         <option value="$PROJECT_DIR$/xml/testng.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/xml/testng1.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/TestNg/ExtentTestNGIReporterListener.java" />
         <option value="$PROJECT_DIR$/src/test/java/TestNg/AppTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/TestNg/ExtentTestNGIReporterListener.java" />
       </list>
     </option>
   </component>
@@ -453,7 +453,7 @@
       <workItem from="1521517224554" duration="357000" />
       <workItem from="1521517639863" duration="57000" />
       <workItem from="1521517704904" duration="831000" />
-      <workItem from="1521528612378" duration="1389000" />
+      <workItem from="1521528612378" duration="2019000" />
     </task>
     <task id="LOCAL-00001" summary="3.20">
       <created>1521526059340</created>
@@ -469,7 +469,14 @@
       <option name="project" value="LOCAL" />
       <updated>1521528731018</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="3.20">
+      <created>1521530041103</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1521530041103</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -505,7 +512,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28393000" />
+    <option name="totallyTimeSpent" value="29023000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
@@ -831,13 +838,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/testng.xml" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/TestNg/BppTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
@@ -849,13 +849,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="9" column="14" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/TestNg/ExtentTestNGIReporterListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="31" column="9" lean-forward="true" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -873,13 +866,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestNg/BppTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TestNg/AppTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="725">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="475">
+          <caret line="19" column="23" lean-forward="true" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/TestNg/ExtentTestNGIReporterListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="114" column="62" selection-start-line="114" selection-start-column="62" selection-end-line="114" selection-end-column="62" />
         </state>
       </provider>
     </entry>
