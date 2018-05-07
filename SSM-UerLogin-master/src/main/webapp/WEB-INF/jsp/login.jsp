@@ -37,6 +37,19 @@
 	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 	<title>Insert title here</title>
 </head>
+<script type="text/javascript">
+    function checkIP(){//js表单验证方法
+        var text1=document.getElementById("username").value;//通过id获取需要验证的表单元素的值
+        var text2=document.getElementById("password").value;
+        if(text1==""||text2==""){//当上面获取的值为空时
+            alert("不能为空哦！");//弹出提示
+			return false;
+        }
+        else{
+            document.forms[0].submit();
+		}
+    }
+</script>
 <body>
 
 		<div class="main">
@@ -45,23 +58,13 @@
 				<div class="head">
 					<img src="/static/images/user.png" alt=""/>
 				</div>
-				<script type="text/javascript">
-                            function checkIP(){//js表单验证方法
-                                var text1=document.getElementById("username").value;//通过id获取需要验证的表单元素的值
-                                var text2=document.getElementById("password").value;
-                                if(text1==""||test2==""){//当上面获取的值为空时
-                                    alert("不能为空哦！");//弹出提示
-                                    return false;//返回false（不提交表单）
-                        }
-                        return true;//提交表单
-                    }
-				</script>
-				<form action="/checkLogin" method="post" >
+
+				<form  method="post"  action="/checkLogin">
 					<table>
 					<input id="username" type="text"  name="username"  />
 					<input id="password" type="password" name="password"  />
 
-					<input type="submit"  value="LOGIN" onclick="checkIP()"/>
+					<input type="button"  value="LOGIN" onclick="checkIP()"/>
 
 					<p><a href="/registration">registration</a></p>
 					</table>
