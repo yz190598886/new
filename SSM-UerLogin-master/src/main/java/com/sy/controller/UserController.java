@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.SessionAttributes;
 
 import com.sy.entity.User;
@@ -61,16 +62,18 @@ public class UserController {
 
 	}
 	@RequestMapping("/register")
-
-	public String regist(User user,Model model){
+	@ResponseBody
+	public User regist(User user,Model model){
 
 		System.out.println("用户注册："+user.getUsername()+user.getPassword());
 
-		userServivce.regist(user);
-
-		model.addAttribute("msg", "注册成功");
-		//注册成功后跳转success.jsp页面
-		return "registrationSuccess";
+		if(user.getUsername()!=null&&user.getPassword()!=null){
+			user=userServivce.regist(user);
+			user.setMessage("注册成功");
+		}else {
+			user.setMessage("账户密码不能为空");
+		}
+		return user;
 	}
 
 

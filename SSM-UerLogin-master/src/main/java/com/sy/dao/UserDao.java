@@ -11,9 +11,9 @@ public interface UserDao {
 	 * 查找用户名和密码
 	 * @param username 登录用户名 
 	 * @param password 密码
-	 * @return
+	 * 2个参数必须@Param@Param@Param
 	 */
-	User findByUsername(String username);
+	User findByUsername(@Param("username")String username,@Param("password")String password);
 
 	
 	/**

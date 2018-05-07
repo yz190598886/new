@@ -7,7 +7,7 @@ import com.sy.entity.User;
 public interface UserService {
 	//	注册用户
 
-	void regist(User user);
+	User regist(User user);
 
 	//检验用户登录
 	User checkLogin(String username,String password);

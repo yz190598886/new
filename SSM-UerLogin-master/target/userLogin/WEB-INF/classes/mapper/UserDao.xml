@@ -5,14 +5,14 @@
 <mapper namespace="com.sy.dao.UserDao">
 	<!-- 目的：为DAO接口方法提供sql语句配置 -->
 	<!-- 查询用户和密码进行登录 -->
-	<select id="findByUsername" resultType="User" parameterType="String">
+	<select id="findByUsername" resultType="com.sy.entity.User" parameterType="String">
 	
-		select * from user_t where user_name = #{username}
+		select * from user_t where user_name = #{username} and password = #{password}
 			
 	</select>
 	
 	<!-- 增加用户名和密码进行注册  -->
- 	<insert id="registerByUsernameAndPassword">
+ 	<insert id="registerByUsernameAndPassword" parameterType="com.sy.entity.User">
 	    
  	    insert into user_t (user_name,password)
  	    values

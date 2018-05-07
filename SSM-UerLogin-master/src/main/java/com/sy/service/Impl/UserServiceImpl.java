@@ -19,7 +19,7 @@ public class UserServiceImpl implements UserService{
 	 */
 	public User checkLogin(String username, String password) {
 		
-		User user = userDao.findByUsername(username);
+		User user = userDao.findByUsername(username,password);
 		if(user != null && user.getPassword().equals(password)){
 		
 			return user;
@@ -28,8 +28,8 @@ public class UserServiceImpl implements UserService{
 	}
 
 
-	public void regist(User user) {
-		// TODO Auto-generated method stub
-		userDao.registerByUsernameAndPassword(user);
+	public User regist(User user) {
+			userDao.registerByUsernameAndPassword(user);
+			return user;
 	}
 }

@@ -27,8 +27,8 @@
         </div>
         <form action="/register" method="post" >
             <table>
-              <tr>name:<input type="text"  name="username" /></tr>
-               <tr>password:<input type="password" name="password"  /></tr>
+              <tr>name:<input type="text"  name="username1" /></tr>
+               <tr>password:<input type="password" name="password"/></tr>
 
                 <input type="submit"  value="save" />
 
