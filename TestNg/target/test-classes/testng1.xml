@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="E:/TestNg">
+        <classes><class name="TestNg.BppTest">
+            <!--<methods><include name="one"/></methods>-->
+        </class>
+        </classes>
+    </test>
+    <listeners>
+        <!-- class-name的值填写为时间创建的监听器的路径 -->
+        <listener class-name="TestNg.ExtentTestNGIReporterListener"></listener>
+    </listeners>
+</suite>
