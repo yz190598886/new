@@ -56,6 +56,7 @@ public class ReadTxt {
                             one = str[i];
                         } else {
                             two = str[i];
+
                         }
                     }
 
